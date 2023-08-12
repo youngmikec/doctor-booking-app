@@ -6,7 +6,10 @@
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node src/server.js"
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "babel ./src -d dist",
+    "doc": "rm -rf dist/public && apidoc -i src/ -o dist/public",
+    "dist": "babel src -s -D -d dist && npm run doc"
   },
   "author": "Hary Pham",
   "license": "ISC",
