@@ -1,8 +1,14 @@
-import doctorService from "./../services/doctorService";
-import userService from "./../services/userService";
-import _ from "lodash";
-import moment from "moment";
-import multer from "multer";
+// import doctorService from "./../services/doctorService";
+// import userService from "./../services/userService";
+// import _ from "lodash";
+// import moment from "moment";
+// import multer from "multer";
+const doctorService = require('./../services/doctorService');
+const userService = require('./../services/userService');
+const _ = require('lodash');
+const moment = require('moment');
+const multer = require('multer');
+
 
 const MAX_BOOKING = 2;
 
