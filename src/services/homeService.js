@@ -165,4 +165,4 @@ const homeService = {
     getDataPageAllSpecializations: getDataPageAllSpecializations
 };
 
-export default homeService;
+module.exports = homeService;

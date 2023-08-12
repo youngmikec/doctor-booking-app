@@ -101,4 +101,4 @@ const auth = {
     checkLoggedOut: checkLoggedOut
 };
 
-export default auth;
+module.exports = auth;

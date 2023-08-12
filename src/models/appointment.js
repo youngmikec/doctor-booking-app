@@ -47,4 +47,4 @@ const defineModel = (sequelize) => {
     return Appointment;
 };
 
-export default defineModel;
+module.exports = defineModel;

@@ -1194,4 +1194,4 @@ const chatFBServie = {
     handleResBookingOnlineMessenger: handleResBookingOnlineMessenger
 };
 
-export default chatFBServie;
+module.exports = chatFBServie;

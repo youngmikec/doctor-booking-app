@@ -501,4 +501,4 @@ const doctorService = {
     createFeedback: createFeedback,
 };
 
-export default doctorService;
+module.exports = doctorService;

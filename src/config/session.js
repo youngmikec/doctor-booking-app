@@ -50,4 +50,4 @@ const sessions = {
     configSession: configSession
 };
 
-export default sessions;
+module.exports = sessions;

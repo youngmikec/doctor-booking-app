@@ -297,4 +297,4 @@ const patientService = {
     getComments: getComments
 };
 
-export default patientService;
+module.exports = patientService;

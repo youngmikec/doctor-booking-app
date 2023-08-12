@@ -76,4 +76,4 @@ const specializationService = {
     deleteSpecializationById: deleteSpecializationById
 };
 
-export default specializationService;
+module.exports = specializationService;

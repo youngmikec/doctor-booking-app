@@ -191,4 +191,4 @@ const supporter = {
     postDoneComment: postDoneComment
 };
 
-export default supporter;
+module.exports = supporter;

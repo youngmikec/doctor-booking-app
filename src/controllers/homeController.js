@@ -376,4 +376,4 @@ const home = {
     getPageAllSpecializations: getPageAllSpecializations
 };
 
-export default home;
+module.exports = home;

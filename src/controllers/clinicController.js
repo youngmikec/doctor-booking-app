@@ -16,4 +16,4 @@ const clinic = {
     getInfoClinicById: getInfoClinicById
 };
 
-export default clinic;
+module.exports = clinic;

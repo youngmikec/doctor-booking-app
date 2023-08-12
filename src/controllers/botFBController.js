@@ -103,4 +103,4 @@ const bot = {
     setInfoBookingMessenger: setInfoBookingMessenger
 };
 
-export default bot;
+module.exports = bot;

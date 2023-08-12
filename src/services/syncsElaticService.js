@@ -99,4 +99,4 @@ const syncElastic = {
     findPostsByTerm: findPostsByTerm
 };
 
-export default syncElastic;
+module.exports = syncElastic;

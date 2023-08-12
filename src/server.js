@@ -1,15 +1,25 @@
 // require('dotenv').config();
 const dotenv = require('dotenv');
 dotenv.config();
-import express from "express";
-import bodyParser from "body-parser";
-import cookieParser from 'cookie-parser';
-import flash from 'connect-flash';
-import methodOverride from 'method-override';
-import passPort from "passport";
-import configViewEngine from "./config/viewEngine.js";
-import initRoutes from "./routes/web.js";
-import session from "./config/session.js";
+// import express from "express";
+// import bodyParser from "body-parser";
+// import cookieParser from 'cookie-parser';
+// import flash from 'connect-flash';
+// import methodOverride from 'method-override';
+// import passPort from "passport";
+// import configViewEngine from "./config/viewEngine.js";
+// import initRoutes from "./routes/web.js";
+// import session from "./config/session.js";
+
+const express = require("express");
+const bodyParser = require("body-parser");
+const cookieParser = require('cookie-parser');
+const flash = require('connect-flash');
+const methodOverride = require('method-override');
+const passPort = require("passport");
+const configViewEngine = require("./config/viewEngine.js");
+const initRoutes = require("./routes/web.js");
+const session = require("./config/session.js");
 
 
 let app = express();

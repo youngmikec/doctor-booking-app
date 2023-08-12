@@ -430,4 +430,4 @@ const admin = {
     deletePostById: deletePostById
 };
 
-export default admin;
+module.exports = admin;

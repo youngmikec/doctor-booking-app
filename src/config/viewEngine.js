@@ -11,4 +11,4 @@ let configViewEngine = (app)=> {
     app.set("views","./src/views");
 };
 
-export default configViewEngine;
+module.exports = configViewEngine;

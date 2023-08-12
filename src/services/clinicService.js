@@ -137,4 +137,4 @@ const clinicService = {
     updateClinic: updateClinic
 };
 
-export default clinicService;
+module.exports = clinicService;

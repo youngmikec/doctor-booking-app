@@ -190,4 +190,4 @@ let initRoutes = (app) => {
 };
 
 
-export default initRoutes;
+module.exports = initRoutes;

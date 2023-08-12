@@ -50,4 +50,4 @@ const helper = {
     convertDateClient: convertDateClient
 };
 
-export default helper;
+module.exports = helper;

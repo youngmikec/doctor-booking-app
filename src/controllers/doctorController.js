@@ -213,4 +213,4 @@ const doctor = {
     postAutoCreateAllDoctorsSchedule: postAutoCreateAllDoctorsSchedule
 };
 
-export default doctor;
+module.exports = doctor;

@@ -55,4 +55,4 @@ const authService = {
     setNewPassword: setNewPassword
 };
 
-export default authService;
+module.exports = authService;

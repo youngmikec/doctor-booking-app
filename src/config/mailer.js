@@ -53,4 +53,4 @@ const mailer = {
     sendEmailWithAttachment: sendEmailWithAttachment
 };
 
-export default mailer;
+module.exports = mailer;

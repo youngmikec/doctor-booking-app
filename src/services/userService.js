@@ -307,4 +307,4 @@ const userService = {
     getAllDoctorsSchedule: getAllDoctorsSchedule
 };
 
-export default userService;
+module.exports = userService;

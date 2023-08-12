@@ -208,4 +208,4 @@ const supporterService = {
     doneComment: doneComment
 };
 
-export default supporterService;
+module.exports = supporterService;
