@@ -1,5 +1,8 @@
-const request = require("request");
-require('dotenv').config();
+// const request = require("request");
+import request from 'request';
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 let createPost = (data) => {
     request.post({
@@ -89,9 +92,11 @@ let findPostsByTerm = (keyword) => {
     });
 };
 
-module.exports = {
+const syncElastic = {
     createPost: createPost,
     updatePost: updatePost,
     deletePost: deletePost,
     findPostsByTerm: findPostsByTerm
 };
+
+export default syncElastic;

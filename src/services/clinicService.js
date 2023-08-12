@@ -1,7 +1,8 @@
-import db from "./../models";
+import db from "../models/index.js";
 import moment from "moment";
 
-const Sequelize = require('sequelize');
+import Sequelize from "sequelize";;
+
 const Op = Sequelize.Op;
 
 let maxBooking = 5;
@@ -128,10 +129,12 @@ let updateClinic = (data) => {
         }
     });
 };
-module.exports = {
+const clinicService = {
     getDetailClinicPage: getDetailClinicPage,
     getClinicById: getClinicById,
     createNewClinic: createNewClinic,
     deleteClinicById: deleteClinicById,
     updateClinic: updateClinic
 };
+
+export default clinicService;

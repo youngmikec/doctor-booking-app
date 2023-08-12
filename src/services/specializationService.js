@@ -1,4 +1,4 @@
-import db from "./../models";
+import db from "../models/index.js";
 
 let getSpecializationById = (id) => {
     return new Promise(async (resolve, reject) => {
@@ -70,8 +70,10 @@ let deleteSpecializationById = (id) => {
     });
 };
 
-module.exports = {
+const specializationService = {
     getSpecializationById: getSpecializationById,
     getAllSpecializations: getAllSpecializations,
     deleteSpecializationById: deleteSpecializationById
 };
+
+export default specializationService;

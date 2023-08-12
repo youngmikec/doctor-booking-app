@@ -1,11 +1,13 @@
-import {tranRegisterEmail, tranForgotPassword} from "../../lang/en";
-import {sendEmail} from "./../config/mailer";
-import userService from "./../services/userService";
-require('dotenv').config();
+import {tranRegisterEmail, tranForgotPassword} from "../../lang/en.js";
+import mailer from "./../config/mailer.js";
+import userService from "./../services/userService.js";
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 let register = ({user}, linkVerify) => {
     return new Promise(async (resolve, reject) => {
-        let isEmailSend = await sendEmail(user.local.email, tranRegisterEmail.subject, tranRegisterEmail.template(linkVerify));
+        let isEmailSend = await mailer.sendEmailNormal(user.local.email, tranRegisterEmail.subject, tranRegisterEmail.template(linkVerify));
         if (isEmailSend) resolve(tranRegisterEmail.sendSuccess(user.local.email));
         else reject(tranRegisterEmail.sendFail);
     });
@@ -23,7 +25,7 @@ let verifyAccount = (token) => {
 };
 let resetPassword = (email, linkVerify) => {
     return new Promise(async (resolve, reject) => {
-        let isEmailSend = await sendEmail(email, tranForgotPassword.subject, tranForgotPassword.template(linkVerify));
+        let isEmailSend = await mailer.sendEmailNormal(email, tranForgotPassword.subject, tranForgotPassword.template(linkVerify));
         if (isEmailSend) resolve(true);
         else reject(false);
     });
@@ -46,9 +48,11 @@ let setNewPassword = (email, password) => {
     });
 };
 
-module.exports = {
+const authService = {
     register: register,
     verifyAccount: verifyAccount,
     resetPassword: resetPassword,
     setNewPassword: setNewPassword
 };
+
+export default authService;

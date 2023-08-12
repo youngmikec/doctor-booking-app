@@ -1,10 +1,11 @@
 import bcrypt from "bcryptjs";
-import db from "./../models";
-import helper from "../helper/client";
-import elastic from "./../config/elastic";
+import db from "../models/index.js";
+import helper from "../helper/client.js";
+// import elastic from "./../config/elastic.js";
 import _ from "lodash";
 
-const Sequelize = require('sequelize');
+import Sequelize from "sequelize";;
+// import Sequelize from "sequelize";;
 const Op = Sequelize.Op;
 
 import moment from "moment";
@@ -294,7 +295,7 @@ let getAllDoctorsSchedule = () => {
         }
     })
 }
-module.exports = {
+const userService = {
     createDoctor: createDoctor,
     getInfoDoctors: getInfoDoctors,
     findUserByEmail: findUserByEmail,
@@ -305,3 +306,5 @@ module.exports = {
     createAllDoctorsSchedule: createAllDoctorsSchedule,
     getAllDoctorsSchedule: getAllDoctorsSchedule
 };
+
+export default userService;

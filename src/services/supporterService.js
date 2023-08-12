@@ -1,7 +1,7 @@
-import db from "./../models";
+import db from "../models/index.js";
 import removeMd from "remove-markdown";
-import syncElastic from "./syncsElaticService";
-import helper from "../helper/client";
+import syncElastic from "./syncsElaticService.js";
+import helper from "../helper/client.js";
 
 let getAllPosts = () => {
     return new Promise((async (resolve, reject) => {
@@ -197,7 +197,7 @@ let doneComment = (id) => {
     });
 };
 
-module.exports = {
+const supporterService = {
     postCreatePost: postCreatePost,
     getAllPosts: getAllPosts,
     getDetailPostPage: getDetailPostPage,
@@ -207,3 +207,5 @@ module.exports = {
     putUpdatePost: putUpdatePost,
     doneComment: doneComment
 };
+
+export default supporterService;

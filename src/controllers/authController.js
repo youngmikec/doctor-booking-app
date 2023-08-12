@@ -1,5 +1,5 @@
 import { validationResult } from "express-validator";
-import authService from "../services/authService";
+// import authService from "../services/authService.js";
 
 let getLogin = (req, res) => {
     return res.render("auth/login.ejs", {
@@ -91,7 +91,7 @@ let checkLoggedOut = (req, res, next) => {
     }
     next();
 };
-module.exports = {
+const auth = {
     getLogin: getLogin,
     getRegister: getRegister,
     postRegister: postRegister,
@@ -100,3 +100,5 @@ module.exports = {
     checkLoggedIn: checkLoggedIn,
     checkLoggedOut: checkLoggedOut
 };
+
+export default auth;

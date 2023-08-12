@@ -1,7 +1,9 @@
-import chatFBService from "./../services/chatFBService";
-import request from "request";
+import chatFBService from "./../services/chatFBService.js";
+// import request from "request";
 
-require('dotenv').config();
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 let getWebhookFB = (req, res) => {
     let VERIFY_TOKEN = process.env.PAGE_ACCESS_TOKEN;
@@ -92,7 +94,7 @@ let setInfoBookingMessenger = async (req, res) =>{
     }
 };
 
-module.exports = {
+const bot = {
     getWebhookFB: getWebhookFB,
     postWebhookFB: postWebhookFB,
     getSetupBotFBPage: getSetupBotFBPage,
@@ -100,3 +102,5 @@ module.exports = {
     getBookingOnlineMessengerPage: getBookingOnlineMessengerPage,
     setInfoBookingMessenger: setInfoBookingMessenger
 };
+
+export default bot;

@@ -1,7 +1,7 @@
-import db from "./../models";
-import mailer from "./../config/mailer";
-import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en";
-import helper from "../helper/client";
+import db from "../models/index.js";
+import mailer from "./../config/mailer.js";
+import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en.js";
+// import helper from "../helper/client.js";
 
 
 const statusPendingId = 3;
@@ -277,7 +277,17 @@ let getComments = () => {
         }
     });
 };
-module.exports = {
+// module.exports = {
+//     getInfoBooking: getInfoBooking,
+//     getForPatientsTabs: getForPatientsTabs,
+//     changeStatusPatient: changeStatusPatient,
+//     createNewPatient: createNewPatient,
+//     getDetailPatient: getDetailPatient,
+//     getLogsPatient: getLogsPatient,
+//     getComments: getComments
+// };
+
+const patientService = {
     getInfoBooking: getInfoBooking,
     getForPatientsTabs: getForPatientsTabs,
     changeStatusPatient: changeStatusPatient,
@@ -286,3 +296,5 @@ module.exports = {
     getLogsPatient: getLogsPatient,
     getComments: getComments
 };
+
+export default patientService;

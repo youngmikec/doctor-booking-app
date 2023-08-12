@@ -1,5 +1,5 @@
-import doctorService from "./../services/doctorService";
-import userService from "./../services/userService";
+import doctorService from "./../services/doctorService.js";
+import userService from "./../services/userService.js";
 import _ from "lodash";
 import moment from "moment";
 import multer from "multer";
@@ -200,7 +200,7 @@ let postAutoCreateAllDoctorsSchedule = async (req, res) => {
 }
 
 
-module.exports = {
+const doctor = {
     getSchedule: getSchedule,
     getCreateSchedule: getCreateSchedule,
     postCreateSchedule: postCreateSchedule,
@@ -212,3 +212,5 @@ module.exports = {
     postCreateChart: postCreateChart,
     postAutoCreateAllDoctorsSchedule: postAutoCreateAllDoctorsSchedule
 };
+
+export default doctor;

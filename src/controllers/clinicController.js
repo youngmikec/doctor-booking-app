@@ -1,4 +1,4 @@
-import clinicService from "./../services/clinicService";
+import clinicService from "./../services/clinicService.js";
 
 let getInfoClinicById = async (req, res) => {
     try {
@@ -11,6 +11,9 @@ let getInfoClinicById = async (req, res) => {
         return res.status(500).json(e);
     }
 };
-module.exports = {
+
+const clinic = {
     getInfoClinicById: getInfoClinicById
 };
+
+export default clinic;

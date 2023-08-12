@@ -1,8 +1,10 @@
-require('dotenv').config();
-import homeService from "../services/homeService";
-import userService from "../services/userService";
-import supporterService from "../services/supporterService";
-import patientService from "../services/patientService";
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+import homeService from "../services/homeService.js";
+import userService from "../services/userService.js";
+import supporterService from "../services/supporterService.js";
+import patientService from "../services/patientService.js";
 
 const statusNewId = 4;
 const statusPendingId = 3;
@@ -175,7 +177,7 @@ let postDoneComment = async (req, res) => {
         return res.status(500).json(e);
     }
 };
-module.exports = {
+const supporter = {
     getNewPatients: getNewPatients,
     getManagePosts: getManagePosts,
     getCreatePost: getCreatePost,
@@ -188,3 +190,5 @@ module.exports = {
     getLogsPatient: getLogsPatient,
     postDoneComment: postDoneComment
 };
+
+export default supporter;

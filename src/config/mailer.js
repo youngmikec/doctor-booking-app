@@ -1,6 +1,8 @@
 import nodeMailer from "nodemailer";
 
-require('dotenv').config();
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 let transporter = nodeMailer.createTransport({
     host: process.env.MAIL_HOST,
@@ -41,7 +43,14 @@ let sendEmailWithAttachment = (to, subject, htmlContent, filename, path) => {
         return transporter.sendMail(options);
     }
 ;
-module.exports = {
+// module.exports = {
+//     sendEmailNormal: sendEmailNormal,
+//     sendEmailWithAttachment: sendEmailWithAttachment
+// };
+
+const mailer = {
     sendEmailNormal: sendEmailNormal,
     sendEmailWithAttachment: sendEmailWithAttachment
 };
+
+export default mailer;

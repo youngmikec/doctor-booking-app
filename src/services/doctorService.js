@@ -1,14 +1,16 @@
-import db from "./../models";
+import db from "../models/index.js";
 
-const Sequelize = require('sequelize');
+import Sequelize from "sequelize";;
 const Op = Sequelize.Op;
 import moment from "moment";
-import patientService from "./patientService";
-import mailer from "../config/mailer";
-import { transMailRemedy } from "../../lang/en";
+import patientService from "./patientService.js";
+import mailer from "../config/mailer.js";
+import { transMailRemedy } from "../../lang/en.js";
 
-var Minizip = require('minizip-asm.js');
-var fs = require("fs");
+// var Minizip = require('minizip-asm.js');
+import Minizip from "minizip-asm.js";
+// var fs = require("fs");
+import fs from 'fs';
 const PATH_ZIP = "src/public/images/patients/remedy/zip";
 let maxBooking = 2;
 const statusPendingId = 3;
@@ -480,7 +482,7 @@ let createFeedback = (data) => {
     });
 };
 
-module.exports = {
+const doctorService = {
     getDoctorForFeedbackPage: getDoctorForFeedbackPage,
     getDoctorWithSchedule: getDoctorWithSchedule,
     postCreateSchedule: postCreateSchedule,
@@ -498,3 +500,5 @@ module.exports = {
     sendFormsForPatient: sendFormsForPatient,
     createFeedback: createFeedback,
 };
+
+export default doctorService;

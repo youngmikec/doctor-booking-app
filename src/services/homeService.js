@@ -1,10 +1,13 @@
-import db from "./../models";
+import db from "../models/index.js";
 import removeMd from "remove-markdown";
-import helper from "../helper/client";
-const Sequelize = require('sequelize');
+// import helper from "../helper/client.js";
+// import Sequelize from "sequelize";;
+import Sequelize from "sequelize";;
 const Op = Sequelize.Op;
 
-require('dotenv').config();
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 let getSpecializations = () => {
     return new Promise((async (resolve, reject) => {
@@ -151,7 +154,7 @@ let getDataPageAllSpecializations = ()=>{
 };
 
 
-module.exports = {
+const homeService = {
     getSpecializations: getSpecializations,
     getClinics: getClinics,
     getDoctors: getDoctors,
@@ -161,3 +164,5 @@ module.exports = {
     getDataPageAllDoctors: getDataPageAllDoctors,
     getDataPageAllSpecializations: getDataPageAllSpecializations
 };
+
+export default homeService;

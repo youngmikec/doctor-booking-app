@@ -1,4 +1,4 @@
-import db from "./../models";
+import db from "../models/index.js";
 import moment from "moment";
 
 let getSpecializationById = (id) => {
@@ -43,9 +43,11 @@ let convertDateClient = (date) => {
     return moment(date).format('DD-MM-YYYY');
 };
 
-module.exports = {
+const helper = {
     getSpecializationById: getSpecializationById,
     getClinicById: getClinicById,
     getSupporterById: getSupporterById,
     convertDateClient: convertDateClient
 };
+
+export default helper;

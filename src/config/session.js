@@ -1,7 +1,10 @@
-require('dotenv').config();
-let express = require('express');
-let Sequelize = require('sequelize');
-let session = require('express-session');
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+import expres from 'express';
+import Sequelize from 'sequelize';
+import session from 'express-session';
+
 
 
 // initalize sequelize with session store
@@ -43,6 +46,8 @@ let configSession = (app) => {
 
 sessionStore.sync();
 
-module.exports = {
+const sessions = {
     configSession: configSession
 };
+
+export default sessions;

@@ -1,4 +1,6 @@
-require('dotenv').config();
+// require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 import request from "request";
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
@@ -1177,7 +1179,7 @@ let handleResBookingOnlineMessenger = (user) => {
     });
 };
 
-module.exports = {
+const chatFBServie = {
     handlePostback: handlePostback,
     handleMessage: handleMessage,
     getWitEntities: getWitEntities,
@@ -1191,3 +1193,5 @@ module.exports = {
     takeControlConversation: takeControlConversation,
     handleResBookingOnlineMessenger: handleResBookingOnlineMessenger
 };
+
+export default chatFBServie;
