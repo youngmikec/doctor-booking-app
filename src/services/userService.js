@@ -1,14 +1,21 @@
-import bcrypt from "bcryptjs";
-import db from "../models/index";
-import helper from "../helper/client";
-// import elastic from "./../config/elastic";
-import _ from "lodash";
-
-import Sequelize from "sequelize";;
+// import bcrypt from "bcryptjs";
+// import db from "../models/index";
+// import helper from "../helper/client";
 // import Sequelize from "sequelize";;
+// import moment from "moment";
+// import _ from "lodash";
+// import elastic from "./../config/elastic";
+// import Sequelize from "sequelize";;
+
+const bcrypt = require("bcryptjs");
+const db = require("../models/index");
+const helper = require("../helper/client");
+const Sequelize = require("sequelize");
+const moment = require("moment");
+const _ = require("lodash");
+
 const Op = Sequelize.Op;
 
-import moment from "moment";
 
 let salt = 7;
 let createDoctor = (doctor) => {

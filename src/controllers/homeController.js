@@ -1,19 +1,31 @@
 // require("dotenv").config();
 require('dotenv').config();
 
-import homeService from "./../services/homeService";
-import specializationService from "./../services/specializationService";
-import doctorService from "./../services/doctorService";
-import userService from "./../services/userService";
-import supporterService from "./../services/supporterService";
-import clinicService from "./../services/clinicService";
-import elasticService from "./../services/syncsElaticService";
-import patientService from "./../services/patientService";
-import moment from "moment";
-// striptags to remove HTML
-import striptags from "striptags";
+// import homeService from "./../services/homeService";
+// import specializationService from "./../services/specializationService";
+// import doctorService from "./../services/doctorService";
+// import userService from "./../services/userService";
+// import supporterService from "./../services/supporterService";
+// import clinicService from "./../services/clinicService";
+// import elasticService from "./../services/syncsElaticService";
+// import patientService from "./../services/patientService";
+// import moment from "moment";
+// // striptags to remove HTML
+// import striptags from "striptags";
 
-import multer from "multer";
+// import multer from "multer";
+
+const homeService = require("./../services/homeService");
+const specializationService = require("./../services/specializationService");
+const doctorService = require("./../services/doctorService");
+const userService = require("./../services/userService");
+const supporterService = require("./../services/supporterService");
+const clinicService = require("./../services/clinicService");
+const elasticService = require("./../services/syncsElaticService");
+const patientService = require("./../services/patientService");
+const moment = require("moment");
+const striptags = require("striptags");
+const multer = require("multer");
 
 let LIMIT_POST = 5;
 

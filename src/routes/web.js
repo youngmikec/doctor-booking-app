@@ -1,16 +1,29 @@
 const express = require("express");
-import passport from "passport";
-import passportLocal from 'passport-local';
-import home from "./../controllers/homeController";
-import auth from "./../controllers/authController";
-import admin from "./../controllers/adminController";
-import doctor from "./../controllers/doctorController";
-import supporter from "./../controllers/supporterController";
-import clinic from "./../controllers/clinicController";
-import bot from "./../controllers/botFBController";
-import userService from "./../services/userService";
+// import passport from "passport";
+// import passportLocal from 'passport-local';
+// import home from "./../controllers/homeController";
+// import auth from "./../controllers/authController";
+// import admin from "./../controllers/adminController";
+// import doctor from "./../controllers/doctorController";
+// import supporter from "./../controllers/supporterController";
+// import clinic from "./../controllers/clinicController";
+// import bot from "./../controllers/botFBController";
+// import userService from "./../services/userService";
 
-import multer from 'multer';
+// import multer from 'multer';
+
+const passport = require("passport");
+const passportLocal = require("passport-local");
+const home = require("./../controllers/homeController");
+const auth = require("./../controllers/authController");
+const admin = require("./../controllers/adminController");
+const doctor = require("./../controllers/doctorController");
+const supporter = require("./../controllers/supporterController");
+const clinic = require("./../controllers/clinicController");
+const bot = require("./../controllers/botFBController");
+const userService = require("./../services/userService");
+const multer = require("multer");
+
 // const multer = require('multer');
 const upload = multer();
 

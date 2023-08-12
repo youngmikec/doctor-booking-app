@@ -1,7 +1,13 @@
-import db from "../models/index";
-import removeMd from "remove-markdown";
-import syncElastic from "./syncsElaticService";
-import helper from "../helper/client";
+// import db from "../models/index";
+// import removeMd from "remove-markdown";
+// import syncElastic from "./syncsElaticService";
+// import helper from "../helper/client";
+
+const db = require("../models/index");
+const removeMd = require("remove-markdown");
+const syncElastic = require("./syncsElaticService");
+const helper = require("../helper/client");
+
 
 let getAllPosts = () => {
     return new Promise((async (resolve, reject) => {

@@ -1,7 +1,7 @@
 // require('dotenv').config();
 require('dotenv').config();
 
-import request from "request";
+const request = require("request");
 
 const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 const WIT_SERVER_TOKEN = process.env.WIT_AI_SERVER_TOKEN;

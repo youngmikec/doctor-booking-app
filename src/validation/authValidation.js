@@ -1,6 +1,11 @@
-import {check} from 'express-validator';
-import {tranRegister} from "../../lang/en";
-import userService from "./../services/userService";
+// import {check} from 'express-validator';
+// import {tranRegister} from "../../lang/en";
+// import userService from "./../services/userService";
+
+const { check } = require('express-validator');
+const { tranRegister } = require('../../lang/en');
+const userService = require('./../services/userService');
+
 
 let validateRegisterUser = [
     check("email")

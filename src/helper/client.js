@@ -1,5 +1,9 @@
-import db from "../models/index";
-import moment from "moment";
+// import db from "../models/index";
+// import moment from "moment";
+
+const db = require('../models/index');
+const moment = require('moment');
+
 
 let getSpecializationById = (id) => {
     return new Promise(async (resolve, reject) => {

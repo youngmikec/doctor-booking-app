@@ -1,7 +1,12 @@
-import db from "../models/index";
-import moment from "moment";
+// import db from "../models/index";
+// import moment from "moment";
 
-import Sequelize from "sequelize";;
+// import Sequelize from "sequelize";
+
+const db = require("../models/index");
+const moment = require("moment");
+const Sequelize = require("sequelize");
+
 
 const Op = Sequelize.Op;
 

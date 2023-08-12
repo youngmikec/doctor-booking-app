@@ -1,7 +1,11 @@
-import db from "../models/index";
-import mailer from "./../config/mailer";
-import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en";
+// import db from "../models/index";
+// import mailer from "./../config/mailer";
+// import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en";
 // import helper from "../helper/client";
+
+const db = require("../models/index");
+const mailer = require("./../config/mailer");
+const { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } = require("../../lang/en");
 
 
 const statusPendingId = 3;

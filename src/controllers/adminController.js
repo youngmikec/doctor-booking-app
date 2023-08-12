@@ -1,11 +1,19 @@
-import homeService from "./../services/homeService";
-import userService from "./../services/userService";
-import clinicService from "./../services/clinicService";
-import specializationService from "./../services/specializationService";
-import supporterService from "./../services/supporterService";
-import doctorService from "./../services/doctorService";
+// import homeService from "./../services/homeService";
+// import userService from "./../services/userService";
+// import clinicService from "./../services/clinicService";
+// import specializationService from "./../services/specializationService";
+// import supporterService from "./../services/supporterService";
+// import doctorService from "./../services/doctorService";
+// import multer from "multer";
 // import chatFBServie from "./../services/chatFBService";
-import multer from "multer";
+
+const homeService = require("./../services/homeService");
+const userService = require("./../services/userService");
+const clinicService = require("./../services/clinicService");
+const specializationService = require("./../services/specializationService");
+const supporterService = require("./../services/supporterService");
+const doctorService = require("./../services/doctorService");
+const multer = require("multer");
 
 let getManageDoctor = async (req, res) => {
     let doctors = await userService.getInfoDoctors();

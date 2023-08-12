@@ -1,10 +1,16 @@
 // require('dotenv').config();
 require('dotenv').config();
 
-import homeService from "../services/homeService";
-import userService from "../services/userService";
-import supporterService from "../services/supporterService";
-import patientService from "../services/patientService";
+// import homeService from "../services/homeService";
+// import userService from "../services/userService";
+// import supporterService from "../services/supporterService";
+// import patientService from "../services/patientService";
+
+const homeService = require('../services/homeService');
+const userService = require('../services/userService');
+const supporterService = require('../services/supporterService');
+const patientService = require('../services/patientService');
+
 
 const statusNewId = 4;
 const statusPendingId = 3;

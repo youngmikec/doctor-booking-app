@@ -1,8 +1,12 @@
-import db from "../models/index";
-import removeMd from "remove-markdown";
-// import helper from "../helper/client";
-// import Sequelize from "sequelize";;
-import Sequelize from "sequelize";;
+// import db from "../models/index";
+// import removeMd from "remove-markdown";
+// import Sequelize from "sequelize";
+
+const db = require("../models/index");
+const removeMd = require("remove-markdown");
+const Sequelize = require("sequelize");
+
+
 const Op = Sequelize.Op;
 
 // require('dotenv').config();
