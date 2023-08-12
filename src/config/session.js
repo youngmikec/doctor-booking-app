@@ -1,9 +1,9 @@
 // require('dotenv').config();
 require('dotenv').config();
 
-import expres from 'express';
-import Sequelize from 'sequelize';
-import session from 'express-session';
+// import expres from 'express';
+const Sequelize = require("sequelize");
+const session = require('express-session');
 
 
 

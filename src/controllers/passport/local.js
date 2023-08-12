@@ -1,6 +1,6 @@
-import passport from 'passport';
-import passportLocal from 'passport-local';
-import userService from "./../../services/userService.js";
+const passport = require('passport');
+const passportLocal = ('passport-local');
+const userService = require("./../../services/userService.js");
 
 let LocalStrategy = passportLocal.Strategy;
 

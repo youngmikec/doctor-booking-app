@@ -1,7 +1,7 @@
-import db from "../models/index.js";
+import db from "../models/index";
 import removeMd from "remove-markdown";
-import syncElastic from "./syncsElaticService.js";
-import helper from "../helper/client.js";
+import syncElastic from "./syncsElaticService";
+import helper from "../helper/client";
 
 let getAllPosts = () => {
     return new Promise((async (resolve, reject) => {

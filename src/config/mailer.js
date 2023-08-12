@@ -1,4 +1,4 @@
-import nodeMailer from "nodemailer";
+const nodeMailer =  require("nodemailer");
 
 // require('dotenv').config();
 require('dotenv').config();

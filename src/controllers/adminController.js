@@ -1,10 +1,10 @@
-import homeService from "./../services/homeService.js";
-import userService from "./../services/userService.js";
-import clinicService from "./../services/clinicService.js";
-import specializationService from "./../services/specializationService.js";
-import supporterService from "./../services/supporterService.js";
-import doctorService from "./../services/doctorService.js";
-// import chatFBServie from "./../services/chatFBService.js";
+import homeService from "./../services/homeService";
+import userService from "./../services/userService";
+import clinicService from "./../services/clinicService";
+import specializationService from "./../services/specializationService";
+import supporterService from "./../services/supporterService";
+import doctorService from "./../services/doctorService";
+// import chatFBServie from "./../services/chatFBService";
 import multer from "multer";
 
 let getManageDoctor = async (req, res) => {

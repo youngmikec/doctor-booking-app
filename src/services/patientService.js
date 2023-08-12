@@ -1,7 +1,7 @@
-import db from "../models/index.js";
-import mailer from "./../config/mailer.js";
-import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en.js";
-// import helper from "../helper/client.js";
+import db from "../models/index";
+import mailer from "./../config/mailer";
+import { transMailBookingNew, transMailBookingSuccess, transMailBookingFailed } from "../../lang/en";
+// import helper from "../helper/client";
 
 
 const statusPendingId = 3;

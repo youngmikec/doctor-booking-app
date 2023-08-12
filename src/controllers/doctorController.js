@@ -1,5 +1,5 @@
-import doctorService from "./../services/doctorService.js";
-import userService from "./../services/userService.js";
+import doctorService from "./../services/doctorService";
+import userService from "./../services/userService";
 import _ from "lodash";
 import moment from "moment";
 import multer from "multer";

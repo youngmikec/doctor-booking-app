@@ -1,15 +1,15 @@
 // require('dotenv').config();
 require('dotenv').config();
 
-// import express from "express";
+// const express = require("express");
 // import bodyParser from "body-parser";
 // import cookieParser from 'cookie-parser';
 // import flash from 'connect-flash';
 // import methodOverride from 'method-override';
 // import passPort from "passport";
-// import configViewEngine from "./config/viewEngine.js";
-// import initRoutes from "./routes/web.js";
-// import session from "./config/session.js";
+// import configViewEngine from "./config/viewEngine";
+// import initRoutes from "./routes/web";
+// import session from "./config/session";
 
 const express = require("express");
 const bodyParser = require("body-parser");

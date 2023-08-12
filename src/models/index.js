@@ -1,15 +1,11 @@
-'use strict';
+// 'use strict';
 // require('dotenv').config();
 require('dotenv').config();
 
-import fs from 'fs';
+const fs = require('fs')
 const path = require('path');
 
-import Sequelize from "sequelize";;
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
-import { readFileSync } from 'fs';
-// import configJson from '../config/config.json';
+const Sequelize = require("sequelize");// import configJson from '../config/config.json';
 
 
 // const __filename = fileURLToPath(import.meta.url);

@@ -1,4 +1,4 @@
-import clinicService from "./../services/clinicService.js";
+import clinicService from "./../services/clinicService";
 
 let getInfoClinicById = async (req, res) => {
     try {

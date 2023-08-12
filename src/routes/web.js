@@ -1,14 +1,14 @@
-import express from "express";
+const express = require("express");
 import passport from "passport";
 import passportLocal from 'passport-local';
-import home from "./../controllers/homeController.js";
-import auth from "./../controllers/authController.js";
-import admin from "./../controllers/adminController.js";
-import doctor from "./../controllers/doctorController.js";
-import supporter from "./../controllers/supporterController.js";
-import clinic from "./../controllers/clinicController.js";
-import bot from "./../controllers/botFBController.js";
-import userService from "./../services/userService.js";
+import home from "./../controllers/homeController";
+import auth from "./../controllers/authController";
+import admin from "./../controllers/adminController";
+import doctor from "./../controllers/doctorController";
+import supporter from "./../controllers/supporterController";
+import clinic from "./../controllers/clinicController";
+import bot from "./../controllers/botFBController";
+import userService from "./../services/userService";
 
 import multer from 'multer';
 // const multer = require('multer');

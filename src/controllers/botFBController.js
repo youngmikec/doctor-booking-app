@@ -1,4 +1,4 @@
-import chatFBService from "./../services/chatFBService.js";
+import chatFBService from "./../services/chatFBService";
 // import request from "request";
 
 // require('dotenv').config();

@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
-import db from "../models/index.js";
-import helper from "../helper/client.js";
-// import elastic from "./../config/elastic.js";
+import db from "../models/index";
+import helper from "../helper/client";
+// import elastic from "./../config/elastic";
 import _ from "lodash";
 
 import Sequelize from "sequelize";;

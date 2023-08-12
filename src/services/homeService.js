@@ -1,6 +1,6 @@
-import db from "../models/index.js";
+import db from "../models/index";
 import removeMd from "remove-markdown";
-// import helper from "../helper/client.js";
+// import helper from "../helper/client";
 // import Sequelize from "sequelize";;
 import Sequelize from "sequelize";;
 const Op = Sequelize.Op;

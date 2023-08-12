@@ -1,6 +1,6 @@
-import {tranRegisterEmail, tranForgotPassword} from "../../lang/en.js";
-import mailer from "./../config/mailer.js";
-import userService from "./../services/userService.js";
+const {tranRegisterEmail, tranForgotPassword} = require("../../lang/en");
+const mailer = require("./../config/mailer");
+const userService = require("./../services/userService");
 // require('dotenv').config();
 require('dotenv').config();
 

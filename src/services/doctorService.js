@@ -1,16 +1,16 @@
-import db from "../models/index.js";
+const db = require("../models/index");
 
-import Sequelize from "sequelize";;
+const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
-import moment from "moment";
-import patientService from "./patientService.js";
-import mailer from "../config/mailer.js";
-import { transMailRemedy } from "../../lang/en.js";
+const moment = require("moment");
+const patientService = require("./patientService");
+const mailer = require("../config/mailer");
+const { transMailRemedy } = require("../../lang/en");
 
 // var Minizip = require('minizip-asm.js');
-import Minizip from "minizip-asm.js";
+const Minizip = require("minizip-asm.js");
 // var fs = require("fs");
-import fs from 'fs';
+const fs = 'fs';
 const PATH_ZIP = "src/public/images/patients/remedy/zip";
 let maxBooking = 2;
 const statusPendingId = 3;
