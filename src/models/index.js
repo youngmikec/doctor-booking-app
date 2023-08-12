@@ -11,7 +11,7 @@ const Sequelize = require("sequelize");// import configJson from '../config/conf
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = dirname(__filename);
 // const __filename = path.resolve(process.cwd(), __filename);
-const __dirname = path.dirname(__filename);
+// const __dirname = path.dirname(__filename);
 
 // const configPath = path.resolve(__dirname, '../config/config.json');
 // const configRaw = readFileSync(configPath, 'utf8');
