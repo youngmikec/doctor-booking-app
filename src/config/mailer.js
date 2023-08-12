@@ -1,8 +1,8 @@
 import nodeMailer from "nodemailer";
 
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 
 let transporter = nodeMailer.createTransport({
     host: process.env.MAIL_HOST,

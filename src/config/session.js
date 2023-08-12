@@ -1,6 +1,6 @@
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 import expres from 'express';
 import Sequelize from 'sequelize';
 import session from 'express-session';

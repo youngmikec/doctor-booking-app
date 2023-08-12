@@ -1,7 +1,7 @@
 'use strict';
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 import fs from 'fs';
 const path = require('path');
 

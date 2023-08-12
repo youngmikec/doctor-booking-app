@@ -6,8 +6,8 @@ import Sequelize from "sequelize";;
 const Op = Sequelize.Op;
 
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 
 let getSpecializations = () => {
     return new Promise((async (resolve, reject) => {

@@ -1,8 +1,8 @@
 // const request = require("request");
 import request from 'request';
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 
 let createPost = (data) => {
     request.post({

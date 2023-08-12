@@ -2,8 +2,8 @@ import {tranRegisterEmail, tranForgotPassword} from "../../lang/en.js";
 import mailer from "./../config/mailer.js";
 import userService from "./../services/userService.js";
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 
 let register = ({user}, linkVerify) => {
     return new Promise(async (resolve, reject) => {

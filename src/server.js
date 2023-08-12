@@ -1,6 +1,6 @@
 // require('dotenv').config();
-const dotenv = require('dotenv');
-dotenv.config();
+require('dotenv').config();
+
 // import express from "express";
 // import bodyParser from "body-parser";
 // import cookieParser from 'cookie-parser';
