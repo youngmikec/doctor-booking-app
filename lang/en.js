@@ -1,11 +1,11 @@
-export const transValidation = {
+const transValidation = {
     email_incorrect: "Invalid email",
     gender_incorrect: "Invalid gender",
     password_incorrect: "Password must have at least 6 characters",
     password_confirmation_incorrect: "The confirm password is not correct",
 };
 
-export const transMailBookingNew = {
+const transMailBookingNew = {
     subject: "Email notification of booking progress at Doctors Care",
     template: (data) => {
         return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
@@ -18,7 +18,7 @@ export const transMailBookingNew = {
     },
 };
 
-export const tranForgotPassword = {
+const tranForgotPassword = {
     subject: "Email notification for forgot password",
     template: (data) => {
         return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
@@ -31,7 +31,7 @@ export const tranForgotPassword = {
     },
 };
 
-export const tranRegisterEmail = {
+const tranRegisterEmail = {
     subject: "Email notification for forgot password",
     template: (data) => {
         return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
@@ -44,7 +44,7 @@ export const tranRegisterEmail = {
     },
 };
 
-export const transMailBookingFailed = {
+const transMailBookingFailed = {
     subject: "Email notification of booking progress at Doctors Care",
     template: (data) => {
         return `<h3>Thank you for booking an appointment at Doctors Care's system  </h3>
@@ -57,7 +57,7 @@ export const transMailBookingFailed = {
     },
 };
 
-export const transMailBookingSuccess = {
+const transMailBookingSuccess = {
     subject: "Email notification of booking progress at Doctors Care",
     template: (data) => {
         return `<h3>Thank you for booking an appointment at Doctors Care's system </h3>
@@ -70,7 +70,7 @@ export const transMailBookingSuccess = {
     },
 };
 
-export const transMailRemedy= {
+const transMailRemedy= {
     subject: "Email sending the medical invoice from the doctor",
     template: (data) => {
         return `<h3>Thank you for your trust in booking a medical examination in DoctorCare's system.</h3>
@@ -83,3 +83,16 @@ export const transMailRemedy= {
         <h4>Thank you !</h4>`;
     },
 };
+
+
+const transModule = {
+    transValidation,
+    transMailBookingNew,
+    tranForgotPassword,
+    tranRegisterEmail,
+    transMailBookingFailed,
+    transMailBookingSuccess,
+    transMailRemedy
+}
+
+module.exports = transModule;
