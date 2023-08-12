@@ -1,5 +1,5 @@
 // require("dotenv").config();
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 import homeService from "./../services/homeService.js";
 import specializationService from "./../services/specializationService.js";

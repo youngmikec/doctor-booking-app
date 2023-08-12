@@ -1,5 +1,5 @@
 // require('dotenv').config();
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 import request from "request";
 

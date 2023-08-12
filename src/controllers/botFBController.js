@@ -2,7 +2,7 @@ import chatFBService from "./../services/chatFBService.js";
 // import request from "request";
 
 // require('dotenv').config();
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 dotenv.config();
 
 let getWebhookFB = (req, res) => {
